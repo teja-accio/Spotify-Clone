@@ -1,0 +1,23 @@
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: black;
+    color: white;
+}
+
+/* header .logo {
+    /* We can add styling specifically for the logo here */
+    
+} */
+
+/* header .nav-links {
+    /* And some styling for the navigation links here */
+} */
+
+/* header .search {
+    /* And finally some styling for the search functionality */
+} */
