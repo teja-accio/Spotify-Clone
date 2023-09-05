@@ -1,72 +1,318 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Spotify Clone</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-    <main>
-      
-        <div class="d-flex flex-column p-3 text-white bg-dark" style="width: 280px;">
-            <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
-              
-              <img src="icon-img/Icons/spotifylogo.png" alt="spotifylogo"></a>
-            <hr>
-            <ul class="nav nav-pills flex-column mb-auto">
-              <li class="nav-item">
-                <a href="#" class="nav-link active" aria-current="page">
-                  <img width="20" height="20" src="icon-img/Icons/Home.png" alt=""> Home
-                </a>
-              </li>
-              <li>
-                <a href="#" class="nav-link text-white">
-                 <img width="20" height="20" src="icon-img/Icons/Search.png" alt="Search">
-                  Search
-                </a>
-              </li>
-              <li>
-                <a href="#" class="nav-link text-white">
-                  <img width="20" height="20" src="icon-img/Icons/Yourlibrary.png" alt="Yourlibrary">
-                  Your Library
-                </a>
-              </li>
-              
-            </ul>
-            <ul class="nav nav-pills flex-column mb-auto "></ul>
-            <li>
-                <a href="#" class="nav-link text-white">
-                  <img width="20" height="20" src="icon-img/Icons/plus.png" alt="Create Playlist">
-                  Create Playlist
-                </a>
-              </li>
-              <li>
-                <a href="#" class="nav-link text-white">
-                  <img width="20" height="20" src="icon-img/Icons/purpleheart.png" alt="Liked Songs">
-                  Liked Songs
-                </a>
-              </li>
-              <li>
-                <a href="#" class="nav-link text-white">
-                   <img width="20" height="20" src="icon-img/Icons/hotspot.png" alt="Your Episodes">
-                  Your Episodes
-                </a>
-              </li>
-            </ul>
-            <hr>
-            <div>
+    <meta name="author" content="Teja" />
+    <meta name="description" content="Spotify is a digital music service" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" type="Image/x-icon" href="icon-img/Icons/spotifylogo.png" />
+  </head>
 
-              <a href="/" class="nav-link text-white">
-                <img src="icon-img/Icons/download.png" alt="download-image">
-                Intall app
+  <body>
+    <div class="main-container">
+      <div class="side_bar">
+        <div class="side_bar_content">
+          <!-- logo -->
+          <div class="spotify_logo">
+            <a href="/">
+              <img src="icon-img/Icons/spotifylogo.png" alt="Spotify logo" />
+            </a>
+          </div>
+
+          <!-- home,search,lib -->
+          <div class="nav-item nav-line-seperation">
+            <div class="logo-flex active">
+              <img src="icon-img/Icons/Home.png" alt="home-logo" />
+              <a href="/">Home</a>
+            </div>
+
+            <div class="logo-flex">
+              <img src="icon-img/Icons/Search.png" alt="search-icon" />
+              <input type="text" placeholder="Search" id="Search-bar" />
+            </div>
+
+            <div class="logo-flex">
+              <img src="icon-img/Icons/Yourlibrary.png" alt="Music library section" />
+              <a href="playlist.html">Your Library</a>
+            </div>
+          </div>
+          <!-- list aong episode -->
+          <div class="nav-item nav-line-seperation">
+            <div class="logo-flex">
+              <img src="icon-img/Icons/plus.png" alt="add button" />
+              <a href="playlist.html">Create Playlist</a>
+            </div>
+            <div class="logo-flex">
+              <img src="icon-img/Icons/purpleheart.png" alt="liked songs" />
+              <a href="#">Liked Songs</a>
+            </div>
+            <div class="logo-flex">
+              <img src="icon-img/Icons/hotspot.png" alt="podcast" />
+              <a href="#">Your Episodes</a>
+            </div>
+          </div>
+          <!-- nav-list -->
+          <div class="side-list">
+            <ul class="nav-line-seperation">
+              <li>FAV</li>
+              <li>Daily mix 1</li>
+              <li>Discover Weekly</li>
+              <li>Malayalam</li>
+              <li>Dance/Electronix Mix</li>
+              <li>EDM/Popular</li>
+            </ul>
+          </div>
+          <!-- app install -->
+          <div class="logo-flex">
+            <img src="icon-img/Icons/download.png" alt="Install" />
+            <a href="#">Install App</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- main content area -->
+      <div class="content-area">
+        <!-- profile area -->
+        <div class="profile-header">
+          <div class="main-arrow">
+            <img src="icon-img/Icons/backward.png" alt="backward" />
+            <img src="icon-img/Icons/forward.png" alt="forward" />
+          </div>
+          <div class="main-profile">
+            <img src="icon-img/Icons/imgs/profile.png" alt="profile picture" />
+            <p>Teja</p>
+            <i class="fa-solid fa-caret-down" style="color: #ffffff"></i>
+          </div>
+        </div>
+        <!-- playlist and artist area -->
+        <div class="playlist-artist-area">
+          <!-- playlist area -->
+
+          <h1>Good Morning</h1>
+          <div class="playlist-area">
+            <div class="playlist">
+              <img src="icon-img/Icons/purpleheart.png" alt="liked songs" />
+              <a href="playlist.html">
+                <p>Liked Songs</p>
+              </a>
+            </div>
+
+            <div class="playlist">
+              <img src="icon-img/Icons/imgs/man.png" alt="playlist-1" />
+              <a href="playlist.html">
+                <p>Netflix Playlist</p>
+              </a>
+            </div>
+
+            <div class="playlist">
+              <img src="icon-img/Icons/imgs/KDA.png" alt="playlist-2" />
+              <a href="playlist.html">
+                <p>K/DA</p>
+              </a>
+            </div>
+
+            <div class="playlist">
+              <img src="icon-img/Icons/imgs/marshmellow.png" alt="playlist-3" />
+              <a href="playlist.html">
+                <p>Dance/Electonic Mix</p>
               </a>
             </div>
           </div>
-        
-    </main>
-    
-</body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+          <!-- artist area -->
+          <div class="artist-area">
+            <div class="show-head">
+              <h3>Shows you might like</h3>
+              <p>SEE ALL</p>
+            </div>
+            <div class="shows-you-might-like">
+              <div class="shows">
+                <a href="playlist.html"
+                  ><img src="icon-img/Icons/imgs/Rectangle 21.png" alt="show-1"
+                /></a>
+                <h4>Weekly motivation</h4>
+                <h5>Ben lana scot</h5>
+              </div>
+
+              <div class="shows">
+                <a href="playlist.html"
+                  ><img src="icon-img/Icons/imgs/Rectangle 22.png" alt="show-1"
+                /></a>
+                <h4>MEDITATION SELF</h4>
+                <h5>Ibn Hussain Aleen</h5>
+              </div>
+
+              <div class="shows">
+                <a href="playlist.html"
+                  ><img class="small-image" src="icon-img/Icons/imgs/Rectangle 16.png" alt="show-1"
+                /></a>
+                <h4>Words beyond act...</h4>
+                <h5>Samuel Scott</h5>
+              </div>
+
+              <div class="shows">
+                <a href="playlist.html"
+                  ><img src="icon-img/Icons/imgs/Rectangle 23.png" alt="show-1"
+                /></a>
+                <h4>The Alexa Show</h4>
+                <h5>Adriana Tom</h5>
+              </div>
+
+              <div class="shows">
+                <a href="playlist.html"
+                  ><img src="icon-img/Icons/imgs/Rectangle 21.png" alt="show-1"
+                /></a>
+                <h4>Weekly motivation</h4>
+                <h5>Ben lana scot</h5>
+              </div>
+
+              <div class="shows">
+                <a href="playlist.html"
+                  ><img src="icon-img/Icons/imgs/Rectangle 22.png" alt="show-1"
+                /></a>
+                <h4>MEDITATION SELF</h4>
+                <h5>Ibn Hussain Aleen</h5>
+              </div>
+
+              <div class="shows">
+                <a href="playlist.html"
+                  ><img src="icon-img/Icons/imgs/Rectangle 23.png" alt="show-1"
+                /></a>
+                <h4>The Alexa Show</h4>
+                <h5>Adriana Tom</h5>
+              </div>
+
+              <div class="shows">
+                <a href="playlist.html"
+                  ><img class="small-image" src="icon-img/Icons/imgs/Rectangle 16.png" alt="show-1"
+                /></a>
+                <h4>Weekly motivation</h4>
+                <h5>Ben lana scot</h5>
+              </div>
+
+              <div class="shows">
+                <a href="playlist.html"
+                  ><img src="icon-img/Icons/imgs/Rectangle 23.png" alt="show-1"
+                /></a>
+                <h4>Weekly motivation</h4>
+                <h5>Ben lana scot</h5>
+              </div>
+
+              <div class="shows">
+                <a href="playlist.html"
+                  ><img src="icon-img/Icons/imgs/Rectangle 21.png" alt="show-1"
+                /></a>
+                <h4>Weekly motivation</h4>
+                <h5>Ben lana scot</h5>
+              </div>
+
+              <div class="shows">
+                <a href="playlist.html"
+                  ><img src="icon-img/Icons/imgs/Rectangle 22.png" alt="show-1"
+                /></a>
+                <h4>MEDITATION SELF</h4>
+                <h5>Ibn Hussain Aleen</h5>
+              </div>
+
+              <div class="shows">
+                <a href="playlist.html"
+                  ><img class="small-image" src="icon-img/Icons/imgs/Rectangle 16.png" alt="show-1"
+                /></a>
+                <h4>Weekly motivation</h4>
+                <h5>Ben lana scot</h5>
+              </div>
+
+              <div class="shows">
+                <a href="playlist.html"
+                  ><img src="icon-img/Icons/imgs/Rectangle 23.png" alt="show-1"
+                /></a>
+                <h4>The Alexa Show</h4>
+                <h5>Adriana Tom</h5>
+              </div>
+
+              <div class="shows">
+                <a href="playlist.html"
+                  ><img src="icon-img/Icons/imgs/Rectangle 21.png" alt="show-1"
+                /></a>
+                <h4>Weekly motivation</h4>
+                <h5>Ben lana scot</h5>
+              </div>
+
+              <div class="shows">
+                <a href="playlist.html"
+                  ><img src="icon-img/Icons/imgs/Rectangle 22.png" alt="show-1"
+                /></a>
+                <h4>MEDITATION SELF</h4>
+                <h5>Ibn Hussain Aleen</h5>
+              </div>
+
+              <div class="shows">
+                <a href="playlist.html"
+                  ><img class="small-image" src="icon-img/Icons/imgs/Rectangle 16.png" alt="show-1"
+                /></a>
+                <h4>Weekly motivation</h4>
+                <h5>Ben lana scot</h5>
+              </div>
+            </div>
+          </div>
+
+          <br />
+          <br />
+         
+        </div>
+      </div>
+    </div>
+    <!-- </div> -->
+
+    <!-- bottom -->
+    <!-- music player -->
+    <div class="play-music-area">
+      <div class="song-playing">
+        <img
+          src="icon-img/Icons/imgs/playing-img.png"
+          alt="song-playing"
+          class="music-art"
+        />
+        <div class="song-playing-name">
+          <h4>Dreaming on</h4>
+          <p>NEFFIX</p>
+        </div>
+        <img src="icon-img/Icons/Vector (1).png" alt="like song" class="like-a-song" />
+      </div>
+      <div class="song-control">
+        <div class="song-control-upper">
+          <img src="icon-img/Icons/shuffle.png" alt="loop" id="loop" />
+          <img src="icon-img/Icons/previous.png" alt="previous" />
+          <img src="icon-img/Icons/play.png" alt="play" id="play-button" />
+          <img src="icon-img/Icons/next.png" alt="next" />
+          <img src="icon-img/Icons/loop.png" alt="loop" id="loop" />
+        </div>
+        <div class="song-control-lower">
+          <p>1:55</p>
+          <img src="icon-img/Icons/big-music-bar.png" alt="song-scroll" />
+          <!-- <img src="icon-img/Icons/Rectangle 18.png" alt="song-scroll-bar"> -->
+          <p>3.45</p>
+        </div>
+      </div>
+      <div class="song-extra-control">
+        <img src="icon-img/Icons//microphone.png" alt="loop" id="lyrics" />
+        <img src="icon-img/Icons/query-queue.png" alt="query" />
+        <img src="icon-img/Icons/carbon_laptop.png" alt="link-debice" />
+        <img src="icon-img/Icons/speaker-white.png" alt="mute" />
+        <img src="icon-img/Icons/volume-bar.png" alt="volume" id="volume" />
+        <img src="icon-img/Icons/strech-speaker.png" alt="streath scrren" />
+      </div>
+    </div>
+    <div class="green-notice">
+      <img id="speaker-blk" src="icon-img/Icons/speaker-black.png" alt="" />
+      <h3>Listening on RealME GT Neo 3T</h3>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/0b381e01ab.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
